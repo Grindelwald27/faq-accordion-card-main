@@ -1,0 +1,67 @@
+body, html {
+	font-family: "Kumbh Sans", sans-serif;
+	background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+	text-align: center;
+}
+
+div.container {
+	margin: 50px auto;
+	background: white;
+	border-radius: 20px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+/* header */
+header img {
+	width: 400px;
+}
+
+header h1 {
+	margin-top: 20px;
+}
+
+/* Estilizando o details*/
+main {
+	width: 90%;
+	margin: 30px auto;
+	text-align: left;
+}
+
+details {
+	margin-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+summary{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: flex-start;
+}
+
+summary:hover {
+	color: hsl(14, 88%, 65%);
+}
+
+summary img {
+	margin-top: 8px;
+	height: 10px;
+}
+
+details[open] summary{
+	color: black;
+	font-weight: bold;
+}
+
+details[open] img{
+	transform: rotate(180deg);
+}
+
+details p {
+	margin-top: 10px;
+	opacity: 0.5;
+	font-size: 0.8em;
+}
